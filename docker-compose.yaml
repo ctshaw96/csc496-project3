@@ -1,22 +1,4 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@ctshaw96 
-0
-4 0 ricdev2/dropwizard-mongodb-ms
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-dropwizard-mongodb-ms/docker-compose.yaml
- Ricardo Lopez Add Dropwizard microservice with MongoDB
-75b572f on Oct 29, 2018
-43 lines (40 sloc)  1000 Bytes
-    
-version: '3'
+ version: '2'
 services:
   mongodb:
     image: mongo
@@ -59,15 +41,3 @@ networks:
   dropw-mongodb-ntw:
     external:
       name: dropw-mongodb-ntw
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
