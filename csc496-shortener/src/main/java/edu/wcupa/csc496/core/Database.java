@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Database {
     private static final Logger LOG = LoggerFactory.getLogger(Database.class);
-    private static final String HOST = "localhost";
+    private static final String HOST = "mongodb";
     private static final int PORT = 27017;
     public static Map<String, String> db = new HashMap();
 
