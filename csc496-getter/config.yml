@@ -1,7 +1,7 @@
 server:
   type: default
   maxThreads: 1024
-  rootPath: /api/*
+  rootPath: /*
   applicationConnectors:
   - type: http
-    port: 90
+    port: 82
