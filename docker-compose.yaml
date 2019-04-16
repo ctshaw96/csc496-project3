@@ -14,7 +14,7 @@ services:
 
   dropw-ms-shortener:
     image: openjdk:8-jre
-    container_name: dropw-ms
+    container_name: dropw-ms-shortener
     volumes:
     - ./csc496-shortener/target/urlShortener-1.0.jar:/microservice/urlShortener-1.0.jar
     - ./csc496-shortener/config.yml:/microservice/config.yml
@@ -27,7 +27,7 @@ services:
     
   dropw-ms-fetcher:
     image: openjdk:8-jre
-    container_name: dropw-ms
+    container_name: dropw-ms-fetcher
     volumes:
     - ./csc496-shortener/target/urlShortener-1.0.jar:/microservice/urlShortener-1.0.jar
     - ./csc496-shortener/config.yml:/microservice/config.yml
