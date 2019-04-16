@@ -29,12 +29,12 @@ services:
     image: openjdk:8-jre
     container_name: dropw-ms-fetcher
     volumes:
-    - ./csc496-shortener/target/urlShortener-1.0.jar:/microservice/urlShortener-1.0.jar
-    - ./csc496-shortener/config.yml:/microservice/config.yml
+    - ./csc496-getter/target/urlFetcher-1.0.jar:/microservice/urlFetcher-1.0.jar
+    - ./csc496-getter/config.yml:/microservice/config.yml
     working_dir: /microservice
-    command: ["java", "-jar", "urlShortener-1.0.jar", "server", "config.yml"]
+    command: ["java", "-jar", "urlFetcher-1.0.jar", "server", "config.yml"]
     ports:
-    - "80:82"
+    - "82:82"
     networks:
     - dropw-mongodb-ntw
 
