@@ -1,5 +1,6 @@
 package edu.wcupa.csc496.config;
 
+import edu.wcupa.csc496.core.Database;
 import edu.wcupa.csc496.resources.PersonResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -15,6 +16,7 @@ public class AppService extends Application<AppConfig> {
     public void run(AppConfig appConfig, Environment environment) throws Exception {
         environment.jersey().register(PersonResource.class);
         System.out.println("INFO: " + environment.jersey().getProperty("baseuri"));
+        Database.testDB();
     }
 
     @Override
