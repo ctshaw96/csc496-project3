@@ -1,4 +1,4 @@
- version: '2'
+version: '2'
 services:
   mongodb:
     image: mongo
@@ -12,28 +12,29 @@ services:
     networks:
       - dropw-mongodb-ntw
 
-  nginx:
-    image: nginx
-    container_name: nginx
+  dropw-ms-shortener:
+    image: openjdk:8-jre
+    container_name: dropw-ms-shortener
     volumes:
-    - ./nginx.conf:/etc/nginx/nginx.conf
+    - ./csc496-shortener/target/urlShortener-1.0.jar:/microservice/urlShortener-1.0.jar
+    - ./csc496-shortener/config.yml:/microservice/config.yml
+    working_dir: /microservice
+    command: ["java", "-jar", "urlShortener-1.0.jar", "server", "config.yml"]
     ports:
-    - "8080:80"
-    - "443:443"
+    - "80:80"
     networks:
     - dropw-mongodb-ntw
-
-  dropw-ms:
+    
+  dropw-ms-fetcher:
     image: openjdk:8-jre
-    container_name: dropw-ms
+    container_name: dropw-ms-fetcher
     volumes:
-    - ./csc496-project3/csc496-shortener/target/server.jar:/microservice/server.jar
-    - ./configuration.yml:/microservice/configuration.yml
+    - ./csc496-shortener/target/urlShortener-1.0.jar:/microservice/urlShortener-1.0.jar
+    - ./csc496-shortener/config.yml:/microservice/config.yml
     working_dir: /microservice
-    command: ["java", "-jar", "dropwizard-mongodb-ms-1.0.0-SNAPSHOT.jar", "server", "configuration.yml"]
+    command: ["java", "-jar", "urlShortener-1.0.jar", "server", "config.yml"]
     ports:
-    - "8090:8080"
-    - "8091:8081"
+    - "80:82"
     networks:
     - dropw-mongodb-ntw
 
