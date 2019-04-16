@@ -15,8 +15,6 @@ services:
   nginx:
     image: nginx
     container_name: nginx
-    volumes:
-    - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
     - "8080:80"
     - "443:443"
@@ -32,7 +30,7 @@ services:
     working_dir: /microservice
     command: ["java", "-jar", "urlShortener-1.0.jar", "server", "config.yml.yml"]
     ports:
-    - "80:80"
+    - "80:8081"
     networks:
     - dropw-mongodb-ntw
 
