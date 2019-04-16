@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tryorganized</groupId>
-    <artifactId>dropwizard-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>edu.wcupa.csc496</groupId>
+    <artifactId>urlFetcher</artifactId>
+    <version>1.0</version>
 
     <dependencies>
         <dependency>
@@ -50,7 +50,7 @@
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.tryorganized.config.AppService</mainClass>
+                                    <mainClass>edu.wcupa.config.AppService</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
