@@ -12,15 +12,6 @@ services:
     networks:
       - dropw-mongodb-ntw
 
-  nginx:
-    image: nginx
-    container_name: nginx
-    ports:
-    - "8080:80"
-    - "443:443"
-    networks:
-    - dropw-mongodb-ntw
-
   dropw-ms:
     image: openjdk:8-jre
     container_name: dropw-ms
