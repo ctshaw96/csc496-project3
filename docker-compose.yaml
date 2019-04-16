@@ -27,13 +27,12 @@ services:
     image: openjdk:8-jre
     container_name: dropw-ms
     volumes:
-    - ./csc496-project3/csc496-shortener/target/server.jar:/microservice/server.jar
-    - ./configuration.yml:/microservice/configuration.yml
+    - ./csc496-project3/csc496-shortener/target/urlShortener-1.0.jar:/microservice/urlShortener-1.0.jar
+    - ./csc496-project3/csc496-shortener/config.yml.yml:/microservice/config.yml.yml
     working_dir: /microservice
-    command: ["java", "-jar", "dropwizard-mongodb-ms-1.0.0-SNAPSHOT.jar", "server", "configuration.yml"]
+    command: ["java", "-jar", "urlShortener-1.0.jar", "server", "config.yml.yml"]
     ports:
-    - "8090:8080"
-    - "8091:8081"
+    - "80:80"
     networks:
     - dropw-mongodb-ntw
 
