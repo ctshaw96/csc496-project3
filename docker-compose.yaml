@@ -12,7 +12,7 @@ services:
     networks:
       - dropw-mongodb-ntw
 
-  dropw-ms:
+  dropw-ms-shortener:
     image: openjdk:8-jre
     container_name: dropw-ms
     volumes:
@@ -21,7 +21,20 @@ services:
     working_dir: /microservice
     command: ["java", "-jar", "urlShortener-1.0.jar", "server", "config.yml"]
     ports:
-    - "80:8081"
+    - "80:80"
+    networks:
+    - dropw-mongodb-ntw
+    
+  dropw-ms-fetcher:
+    image: openjdk:8-jre
+    container_name: dropw-ms
+    volumes:
+    - ./csc496-shortener/target/urlShortener-1.0.jar:/microservice/urlShortener-1.0.jar
+    - ./csc496-shortener/config.yml:/microservice/config.yml
+    working_dir: /microservice
+    command: ["java", "-jar", "urlShortener-1.0.jar", "server", "config.yml"]
+    ports:
+    - "80:82"
     networks:
     - dropw-mongodb-ntw
 
