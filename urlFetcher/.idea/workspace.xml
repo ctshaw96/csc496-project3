@@ -2,32 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc2373a-5967-4351-9f94-ec90148e54c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/data/LinkToShortenIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/data/TenitStyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-urlFetcher-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-urlFetcher-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/urlFetcher-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/urlFetcher-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/dependency-reduced-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/src/main/java/edu/wcupa/config/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/src/main/java/edu/wcupa/config/AppService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/src/main/java/edu/wcupa/resources/PersonResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/target/classes/edu/wcupa/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/target/classes/edu/wcupa/config/AppService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/target/classes/edu/wcupa/resources/PersonResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/target/original-urlFetcher-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-getter/target/urlFetcher-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../csc496-shortener/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/config/AppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/config/AppService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/core/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/core/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/resources/PersonResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/resources/ShortenerResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/classes/edu/wcupa/csc496/config/AppService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/target/classes/edu/wcupa/csc496/config/AppService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/classes/edu/wcupa/csc496/core/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/target/classes/edu/wcupa/csc496/core/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/dependency-reduced-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/dropwizard-demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/config/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/config/AppService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/core/Database.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/data/LinkToShortenIF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/data/TenitStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/src/main/java/edu/wcupa/csc496/resources/ShortenerResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/classes/edu/wcupa/csc496/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/classes/edu/wcupa/csc496/config/AppService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/classes/edu/wcupa/csc496/core/Database.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/classes/edu/wcupa/csc496/resources/PersonResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/original-urlShortener-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/target/original-urlShortener-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/urlShortener-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../csc496-shortener/target/urlShortener-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/original-urlShortener-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/urlShortener-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../urlShortener/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../urlShortener/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../urlShortener/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../urlShortener/config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,6 +135,14 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1228139609">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -132,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/wcupa/config/AppService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="195">
               <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -153,7 +179,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/wcupa/resources/PersonResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="210">
               <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -418,16 +444,18 @@
       <workItem from="1554845002184" duration="342000" />
       <workItem from="1555455532060" duration="1773000" />
       <workItem from="1555625982682" duration="197000" />
+      <workItem from="1555627587090" duration="427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9316000" />
+    <option name="totallyTimeSpent" value="9743000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -442,7 +470,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32650602" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32650602" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
@@ -476,18 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/wcupa/config/AppService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="195">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/wcupa/resources/PersonResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -498,6 +516,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/wcupa/resources/PersonResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
