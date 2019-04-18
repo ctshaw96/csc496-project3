@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc2373a-5967-4351-9f94-ec90148e54c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/wcupa/core/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../csc496-getter/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../csc496-getter/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../csc496-getter/.idea/vcs.xml" beforeDir="false" />
@@ -43,9 +44,7 @@
       <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/original-urlShortener-1.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../csc496-shortener/target/urlShortener-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../urlShortener/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../urlShortener/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../urlShortener/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../urlShortener/config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -142,6 +141,26 @@
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="85" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="85" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -188,11 +207,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/wcupa/core/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -217,6 +245,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tryorganized/resources/PersonResource.java" />
         <option value="$PROJECT_DIR$/config.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/wcupa/core/Database.java" />
       </list>
     </option>
   </component>
@@ -249,84 +278,61 @@
         <subPane>
           <expand>
             <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
+              <item name="urlFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlFetcher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
+              <item name="urlFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlFetcher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
+              <item name="urlFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlFetcher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
+              <item name="urlFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlFetcher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
+              <item name="urlFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlFetcher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wcupa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="wcupa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="urlFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlFetcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wcupa" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="urlFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlFetcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wcupa" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="csc496-getter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc496-getter" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="urlFetcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="urlFetcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wcupa" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,7 +345,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555626115302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555629929783" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -444,18 +450,17 @@
       <workItem from="1554845002184" duration="342000" />
       <workItem from="1555455532060" duration="1773000" />
       <workItem from="1555625982682" duration="197000" />
-      <workItem from="1555627587090" duration="427000" />
+      <workItem from="1555627587090" duration="771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9743000" />
+    <option name="totallyTimeSpent" value="10087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -470,7 +475,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32650602" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32650602" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
@@ -533,6 +538,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/wcupa/core/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
         </state>
       </provider>
     </entry>
