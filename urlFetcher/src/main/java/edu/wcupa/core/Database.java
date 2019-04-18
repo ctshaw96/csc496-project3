@@ -41,8 +41,7 @@ public class Database {
         DB database = mongoClient.getDB("url-shortener");
         DBCollection collection = database.getCollection(COLLECTION_NAME);
         DBObject dbObject = collection.findOne(keyword);
-        dbObject.
-        return collection.getCount() > beforeCount;
+        return dbObject.toString();
     }
 
 
