@@ -1,3 +1,4 @@
-edu/wcupa/resources/PersonResource.class
+edu/wcupa/core/Database.class
 edu/wcupa/config/AppService.class
+edu/wcupa/resources/FetcherResource.class
 edu/wcupa/config/AppConfig.class
