@@ -5,7 +5,11 @@ import edu.wcupa.csc496.data.LinkToShorten;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.InetAddress;
+import java.net.URL;
 import java.net.UnknownHostException;
 
 @Path("shorten")
@@ -31,8 +35,27 @@ public class ShortenerResource {
                 .build();
     }
 
-    private String getShortenedLink(String keyword) throws UnknownHostException {
-        return  InetAddress.getLocalHost() + ":82/shorten/go/" + keyword;
+    private String getShortenedLink(String keyword) throws Exception {
+        return  getIp()+ ":82/shorten/go/" + keyword;
+    }
+
+    public static String getIp() throws Exception {
+        URL whatismyip = new URL("http://checkip.amazonaws.com");
+        BufferedReader in = null;
+        try {
+            in = new BufferedReader(new InputStreamReader(
+                    whatismyip.openStream()));
+            String ip = in.readLine();
+            return ip;
+        } finally {
+            if (in != null) {
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     private String shorten(String url, String keyword) {
@@ -42,7 +65,7 @@ public class ShortenerResource {
         }
         try {
             return getShortenedLink(keyword);
-        } catch (UnknownHostException e) {
+        }  catch (Exception e) {
             return "Failed to get url...";
         }
     }
