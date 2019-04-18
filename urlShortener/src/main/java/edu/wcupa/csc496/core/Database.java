@@ -1,5 +1,6 @@
 package edu.wcupa.csc496.core;
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
@@ -31,10 +32,14 @@ public class Database {
         DB database = mongoClient.getDB("url-shortener");
         DBCollection collection = database.getCollection(COLLECTION_NAME);
         long beforeCount = collection.getCount();
-        database.command("{\n" +
-                "      insert: \""+ COLLECTION_NAME +"\",\n" +
-                "      documents: [ { keyword:" + keyword +", url:"+ url +"} ]\n" +
-                "   }");
+
+        BasicDBObject document = new BasicDBObject();
+        document.put("keyword", keyword);
+        document.put("url", url);
+
+        collection.insert(document);
+
+
         return collection.getCount() > beforeCount;
     }
 
