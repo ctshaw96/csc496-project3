@@ -18,7 +18,7 @@ services:
     working_dir: /microservice
     command: ["java", "-jar", "urlShortener-1.0.jar", "server", "config.yml"]
     ports:
-    - "80:80"
+    - "84:84"
     networks:
     - dropw-mongodb-ntw
     
