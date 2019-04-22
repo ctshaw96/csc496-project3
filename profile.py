@@ -36,6 +36,8 @@ prefixForIP = "192.168.1."
 
 link = request.LAN("lan")
 
+i=0
+
 node = request.XenVM("head")
 node.routable_control_ip = "true"
     
