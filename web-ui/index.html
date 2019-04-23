@@ -42,7 +42,7 @@
           alert("Both the link and keyword must have a value!");
           return;
         }
-        const url = "http://localhost:84/shorten?url=" + originalUrl + "&keyword=" + keyword;
+        const url = "http://" + getIp() +":84/shorten?url=" + originalUrl + "&keyword=" + keyword;
         fetch(url, {mode:"cors"})
           .then(response=>{
             response.json().then(function(data) {
@@ -50,6 +50,11 @@
               })}
             )
           .catch(error=>{console.log(error)});
+      }
+
+      function getIp() {
+        var ip = location.host;
+        return ip;
       }
 
       function addToList(linkToShorten) {
