@@ -24,7 +24,7 @@ public class FetcherResource {
     @Path("go/{keyword}")
     public String getLink(@PathParam("keyword") String keyword) {
         String link = Database.getLink(keyword).getOriginalLink();
-        link = fixLinksIfNeeded(link);
+        System.out.println("Redirecting to " + link);
         return "<script>window.location.replace(\"" + link + "\");</script>";
     }
 
@@ -33,15 +33,6 @@ public class FetcherResource {
     @Path("go")
     public List<LinkToShorten> getAll() {
         return Database.getAllLinks();
-    }
-
-
-    private String fixLinksIfNeeded(String link) {
-        if (!link.toLowerCase().startsWith("http://") || !link.toLowerCase().startsWith("https://")) {
-            link = "http://" + link;
-        }
-
-        return link;
     }
 
 

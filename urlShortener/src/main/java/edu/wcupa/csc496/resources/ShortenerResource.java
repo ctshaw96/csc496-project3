@@ -63,9 +63,8 @@ public class ShortenerResource {
     }
 
     private String fixLinksIfNeeded(String link) {
-        if (!link.toLowerCase().startsWith("http://") || !link.toLowerCase().startsWith("https://")) {
+        if (!link.startsWith("http://"))
             link = "http://" + link;
-        }
 
         return link;
     }
