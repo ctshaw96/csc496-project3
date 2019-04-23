@@ -15,14 +15,6 @@ import java.net.URL;
 public class ShortenerResource {
 
     @GET
-    @Path("/go/{keyword}")
-    public String getPersons(@PathParam("keyword") String keyword) {
-        System.out.println(Database.db);
-        System.out.println(Database.db.get(keyword));
-        return Database.db.get(keyword);
-    }
-
-    @GET
     @Path("")
     public LinkToShorten shortenLink(@QueryParam("url") String url, @QueryParam("keyword") String keyword){
         return  shorten(url, keyword);
@@ -59,7 +51,7 @@ public class ShortenerResource {
             return LinkToShorten.builder().build();
         }
         LinkToShorten linkToShorten = LinkToShorten.builder()
-                .withOriginalLink(url)
+                .withOriginalLink(fixLinksIfNeeded(url))
                 .withKeyword(keyword)
                 .withShortLink(shortenedLink)
                 .build();
@@ -68,6 +60,14 @@ public class ShortenerResource {
             System.err.println("Failed to insert into DB!");
         }
         return linkToShorten;
+    }
+
+    private String fixLinksIfNeeded(String link) {
+        if (!link.toLowerCase().startsWith("http://") || !link.toLowerCase().startsWith("https://")) {
+            link = "http://" + link;
+        }
+
+        return link;
     }
 
 

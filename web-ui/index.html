@@ -42,19 +42,21 @@
           alert("Both the link and keyword must have a value!");
           return;
         }
-        const url = "http://dropw-ms-shortener:84/shorten?url=" + originalUrl + "&keyword=" + keyword;
-        fetch(url)
-          .then(data=>{
-            addToList(data);
-            console.log(data)}
+        const url = "http://localhost:84/shorten?url=" + originalUrl + "&keyword=" + keyword;
+        fetch(url, {mode:"cors"})
+          .then(response=>{
+            response.json().then(function(data) {
+                  addToList(data);
+              })}
             )
           .catch(error=>{console.log(error)});
       }
 
       function addToList(linkToShorten) {
+        console.log(linkToShorten);
         let list = document.getElementById("list");
         list.innerHTML = "<li><p><b>Keyword: </b>" + linkToShorten.keyword + " , <b>Short Link:</b> <a href=\"" + linkToShorten.shortLink + 
-        "\">" + linkToShorten.shortLink + "</a> , Original Link: <a href=\"" + linkToShorten.originalLink + 
+        "\">http://" + linkToShorten.shortLink + "</a> , Original Link: <a href=\"" + linkToShorten.originalLink + 
         "\">" + linkToShorten.originalLink + "</a></p></li>" + list.innerHTML;
       }
 

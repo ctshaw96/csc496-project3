@@ -5,6 +5,11 @@ import edu.wcupa.csc496.resources.ShortenerResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import org.eclipse.jetty.servlets.CrossOriginFilter;
+
+import javax.servlet.DispatcherType;
+import javax.servlet.FilterRegistration;
+import java.util.EnumSet;
 
 
 public class AppService extends Application<AppConfig> {
@@ -15,7 +20,20 @@ public class AppService extends Application<AppConfig> {
 
     public void run(AppConfig appConfig, Environment environment) throws Exception {
         environment.jersey().register(ShortenerResource.class);
-        System.out.println("INFO: " + environment.jersey().getProperty("baseuri"));
+
+        // Enable CORS headers
+        final FilterRegistration.Dynamic cors =
+                environment.servlets().addFilter("CORS", CrossOriginFilter.class);
+
+        // Configure CORS parameters
+        cors.setInitParameter("allowedOrigins", "*");
+        cors.setInitParameter("allowedHeaders", "X-Requested-With,Content-Type,Accept,Origin");
+        cors.setInitParameter("allowedMethods", "OPTIONS,GET,PUT,POST,DELETE,HEAD");
+
+        // Add URL mapping
+        cors.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/*");
+
+
         Database.initDB();
     }
 
