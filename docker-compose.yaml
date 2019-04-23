@@ -28,3 +28,11 @@ services:
     command: ["java", "-jar", "urlFetcher-1.0.jar", "server", "config.yml"]
     ports:
     - "82:82"
+  nginx:
+    image: nginx
+    container_name: nginx
+    volumes:
+    - ./web-ui:ui/html
+    ports:
+    - "80:80"
+ 
