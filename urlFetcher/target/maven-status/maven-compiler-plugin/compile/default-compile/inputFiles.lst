@@ -1,4 +1,7 @@
 /Users/chris/Desktop/CODE/csc496-project3/urlFetcher/src/main/java/edu/wcupa/config/AppConfig.java
+/Users/chris/Desktop/CODE/csc496-project3/urlFetcher/src/main/java/edu/wcupa/tools/RosettaMongoDB.java
 /Users/chris/Desktop/CODE/csc496-project3/urlFetcher/src/main/java/edu/wcupa/core/Database.java
 /Users/chris/Desktop/CODE/csc496-project3/urlFetcher/src/main/java/edu/wcupa/resources/FetcherResource.java
+/Users/chris/Desktop/CODE/csc496-project3/urlFetcher/src/main/java/edu/wcupa/tools/TenitStyle.java
 /Users/chris/Desktop/CODE/csc496-project3/urlFetcher/src/main/java/edu/wcupa/config/AppService.java
+/Users/chris/Desktop/CODE/csc496-project3/urlFetcher/src/main/java/edu/wcupa/data/LinkToShortenIF.java

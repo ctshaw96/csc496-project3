@@ -1,6 +1,8 @@
 package edu.wcupa.resources;
 
+
 import edu.wcupa.core.Database;
+import edu.wcupa.data.LinkToShorten;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
@@ -20,8 +22,26 @@ public class FetcherResource {
 
     @GET
     @Path("go/{keyword}")
-    public String getPersons(@PathParam("keyword") String keyword) {
-        return "<script>window.location.href = \"" + Database.get(keyword) + "\";";
+    public String getLink(@PathParam("keyword") String keyword) {
+        String link = Database.getLink(keyword).getOriginalLink();
+        link = fixLinksIfNeeded(link);
+        return "<script>window.location.replace(\"" + link + "\");</script>";
+    }
+
+    @Produces(MediaType.APPLICATION_JSON)
+    @GET
+    @Path("go")
+    public List<LinkToShorten> getAll() {
+        return Database.getAllLinks();
+    }
+
+
+    private String fixLinksIfNeeded(String link) {
+        if (!link.toLowerCase().startsWith("http://") || !link.toLowerCase().startsWith("https://")) {
+            link = "http://" + link;
+        }
+
+        return link;
     }
 
 

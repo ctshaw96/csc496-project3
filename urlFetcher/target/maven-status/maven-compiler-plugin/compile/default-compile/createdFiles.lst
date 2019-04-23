@@ -1,4 +1,12 @@
+edu/wcupa/tools/RosettaMongoDB$1.class
+edu/wcupa/data/LinkToShortenIF.class
 edu/wcupa/core/Database.class
-edu/wcupa/config/AppService.class
+edu/wcupa/tools/RosettaMongoDB.class
+edu/wcupa/data/LinkToShorten$1.class
+edu/wcupa/data/LinkToShorten$Builder.class
 edu/wcupa/resources/FetcherResource.class
+edu/wcupa/tools/TenitStyle.class
+edu/wcupa/data/LinkToShorten$Json.class
+edu/wcupa/data/LinkToShorten.class
+edu/wcupa/config/AppService.class
 edu/wcupa/config/AppConfig.class

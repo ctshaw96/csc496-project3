@@ -8,9 +8,7 @@ import javax.ws.rs.core.MediaType;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.InetAddress;
 import java.net.URL;
-import java.net.UnknownHostException;
 
 @Path("shorten")
 @Produces(MediaType.APPLICATION_JSON)
@@ -27,12 +25,7 @@ public class ShortenerResource {
     @GET
     @Path("")
     public LinkToShorten shortenLink(@QueryParam("url") String url, @QueryParam("keyword") String keyword){
-        String shortLink = shorten(url, keyword);
-        return LinkToShorten.builder()
-                .withShortLink(shortLink)
-                .withOriginalLink(url)
-                .withKeyword(keyword)
-                .build();
+        return  shorten(url, keyword);
     }
 
     private String getShortenedLink(String keyword) throws Exception {
@@ -58,16 +51,23 @@ public class ShortenerResource {
         }
     }
 
-    private String shorten(String url, String keyword) {
-        boolean didInsert = Database.insert(url, keyword);
+    private LinkToShorten shorten(String url, String keyword) {
+        String shortenedLink = "";
+        try {
+           shortenedLink = getShortenedLink(keyword);
+        } catch (Exception e) {
+            return LinkToShorten.builder().build();
+        }
+        LinkToShorten linkToShorten = LinkToShorten.builder()
+                .withOriginalLink(url)
+                .withKeyword(keyword)
+                .withShortLink(shortenedLink)
+                .build();
+        boolean didInsert = Database.insertShortenLink(linkToShorten);
         if (!didInsert) {
             System.err.println("Failed to insert into DB!");
         }
-        try {
-            return getShortenedLink(keyword);
-        }  catch (Exception e) {
-            return "Failed to get url...";
-        }
+        return linkToShorten;
     }
 
 

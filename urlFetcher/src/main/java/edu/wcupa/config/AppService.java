@@ -1,5 +1,6 @@
 package edu.wcupa.config;
 
+import edu.wcupa.core.Database;
 import edu.wcupa.resources.FetcherResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -15,6 +16,8 @@ public class AppService extends Application<AppConfig> {
     public void run(AppConfig appConfig, Environment environment) throws Exception {
         environment.jersey().register(FetcherResource.class);
         System.out.println("INFO: " + environment.jersey().getProperty("baseuri"));
+        Database.initDB();
+
     }
 
     @Override

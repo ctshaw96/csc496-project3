@@ -1,9 +1,11 @@
 edu/wcupa/csc496/core/Database.class
 edu/wcupa/csc496/data/LinkToShortenIF.class
+edu/wcupa/csc496/data/RosettaMongoDB$1.class
 edu/wcupa/csc496/config/AppConfig.class
 edu/wcupa/csc496/data/LinkToShorten$Json.class
 edu/wcupa/csc496/data/LinkToShorten.class
 edu/wcupa/csc496/config/AppService.class
+edu/wcupa/csc496/data/RosettaMongoDB.class
 edu/wcupa/csc496/data/TenitStyle.class
 edu/wcupa/csc496/resources/ShortenerResource.class
 edu/wcupa/csc496/data/LinkToShorten$1.class
