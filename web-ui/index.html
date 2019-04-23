@@ -1,0 +1,63 @@
+  <head>
+    <title>Google Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "app.css" />
+  </head>
+  
+  <body>
+
+    <div>
+      <h1>
+        URL Shortener
+      </h1>
+    </div>
+    
+    <!-- FORM SEARCH -->  
+    <div class="form">  
+      <form>
+        <label for="form-search"></label>
+        <input type="text" id="link-input" placeholder="Enter the link you want to shorten">
+        <input type="text" id="keyword-input" placeholder="Enter your keyword for the link">
+      </form>
+    </div>  
+    
+    <!-- BUTTONS -->
+    <div class= "buttons">  
+        <button id="shorten" onclick="shorten()">Shorten</button>
+    </div>
+
+    <!-- List -->
+    <ul id="list">
+
+    </ul>
+
+    <script>
+      
+
+
+      function shorten() {
+        let originalUrl = document.getElementById("link-input").value;
+        let keyword = document.getElementById("keyword-input").value;
+        if (originalUrl == "" || keyword == "") {
+          alert("Both the link and keyword must have a value!");
+          return;
+        }
+        const url = "http://dropw-ms-shortener:84/shorten?url=" + originalUrl + "&keyword=" + keyword;
+        fetch(url)
+          .then(data=>{
+            addToList(data);
+            console.log(data)}
+            )
+          .catch(error=>{console.log(error)});
+      }
+
+      function addToList(linkToShorten) {
+        let list = document.getElementById("list");
+        list.innerHTML = "<li><p><b>Keyword: </b>" + linkToShorten.keyword + " , <b>Short Link:</b> <a href=\"" + linkToShorten.shortLink + 
+        "\">" + linkToShorten.shortLink + "</a> , Original Link: <a href=\"" + linkToShorten.originalLink + 
+        "\">" + linkToShorten.originalLink + "</a></p></li>" + list.innerHTML;
+      }
+
+    
+    </script>
+  </body>
