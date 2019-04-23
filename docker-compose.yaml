@@ -32,7 +32,7 @@ services:
     image: nginx
     container_name: nginx
     volumes:
-    - ./web-ui:/ui/html
+    - ./web-ui:/usr/share/nginx/html
     ports:
     - "80:80"
  
