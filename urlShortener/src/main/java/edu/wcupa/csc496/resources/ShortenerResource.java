@@ -63,7 +63,7 @@ public class ShortenerResource {
     }
 
     private String fixLinksIfNeeded(String link) {
-        if (!link.startsWith("http://"))
+        if (!link.startsWith("http://") && !link.startsWith("https://"))
             link = "http://" + link;
 
         return link;
