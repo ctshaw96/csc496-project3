@@ -13,4 +13,5 @@ sudo apt-get install -y jq
 sudo usermod -aG docker cs847325
 
 # launch docker containers
-cd /local/repository && sudo docker-compose up
+cd /local/repository 
+sudo docker-compose up
