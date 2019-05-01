@@ -8,6 +8,8 @@ Documentation: The computing service we will be using is mongoDB/other if need b
 Connecting containers:
 We are going to be building a Docker network, and when instantiating all of the        containers, we are going to have them attached to the Docker network. Then in order to have connections inside the application, we will query the Docker network based on service names.
 
+Deliverable 2 can be found here: https://github.com/ctshaw96/csc496-project3/blob/master/Deliverable%202.pdf
+
 		
 
  
